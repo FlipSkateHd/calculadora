@@ -1,73 +1,112 @@
-header{
+/* Este código parece ser a estruturação de uma calculadora simples em HTML e CSS. Aqui estão as explicações detalhadas: */
+
+header {
     text-align: center;
-    
-}
-.image{
-    display: none;
+    /* Centraliza o texto do cabeçalho */
 }
 
-p{
+p {
     text-align: left;
+    /* Alinha o texto dos parágrafos à esquerda */
     color: #1c1d20;
+    /* Define a cor do texto dos parágrafos */
 }
-.body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #dcdbd9;
-    margin: 0;
-    font-family: Arial, sans-serif ;
-    color:  black;
+
+.link {
+    color: #dcdbd9;
+    /* Define a cor do link como azul */
 }
+
+.link:hover {
+    color: #1c1d20;
+    /* Define a cor do link quando passar o mouse sobre ele como vermelho */
+}
+
 
 body {
     display: flex;
+    /* Usa um layout flexível para o corpo */
     justify-content: center;
+    /* Centraliza os elementos horizontalmente */
     align-items: center;
+    /* Centraliza os elementos verticalmente */
     height: 100vh;
+    /* Define a altura do corpo para ocupar toda a altura da tela */
     background-color: #dcdbd9;
+    /* Define a cor de fundo do corpo */
     margin: 0;
-    font-family: Arial, sans-serif ;
+    /* Remove as margens padrão */
+    font-family: Arial, sans-serif;
+    /* Define a fonte do texto */
     color: #dcdbd9;
+    /* Define a cor do texto */
 }
 
 .calculator {
     background-color: #5b5e89;
+    /* Define a cor de fundo da área da calculadora */
     padding: 20px;
+    /* Adiciona preenchimento interno à área da calculadora */
+    border: 1px solid #1c1d20;
     border-radius: 4px;
+    /* Adiciona borda arredondada à área da calculadora */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    /* Sombra */
 }
 
 .display {
     width: 100%;
+    /* Define a largura da área de exibição para ocupar toda a largura da calculadora */
     height: 50px;
-    margin-bottom: 10px;
+    /* Define a altura da área de exibição */
+    margin-bottom: 15px;
+    /* Adiciona margem na parte inferior da área de exibição */
     padding: 10px;
+    /* Adiciona preenchimento interno à área de exibição */
     font-size: 24px;
+    /* Define o tamanho da fonte da área de exibição */
     text-align: right;
+    /* Alinha o texto à direita na área de exibição */
     border: 1px solid #1c1d20;
+    /* Adiciona uma borda sólida à área de exibição */
     border-radius: 5px;
+    /* Adiciona borda arredondada à área de exibição */
     box-sizing: border-box;
+    /* Define o modelo de caixa da área de exibição */
+    color: #817299;
 }
 
 .buttons {
     display: grid;
+    /* Usa um layout de grade para os botões */
     grid-template-columns: repeat(4, 1fr);
+    /* Define uma grade com 4 colunas iguais */
     gap: 10px;
+    /* Define o espaçamento entre as células da grade */
 }
 
 button.botao {
     width: 100%;
+    /* Define a largura total do botão */
     height: 50px;
+    /* Define a altura do botão */
     font-size: 18px;
+    /* Define o tamanho da fonte do botão */
     background-color: #817299;
-    color: white;
+    /* Define a cor de fundo do botão */
+    color: #1c1d20;
+    /* Define a cor do texto do botão */
     border: 1px solid #1c1d20;
+    /* Adiciona uma borda sólida ao botão */
     border-radius: 5px;
+    /* Adiciona borda arredondada ao botão */
     cursor: pointer;
+    /* Muda o cursor para indicar que o botão é clicável */
     transition: background-color 0.3s;
+    /* Adiciona uma transição suave de cor de fundo ao botão */
 }
 
 button.botao:hover {
     background-color: #dcdbd9;
+    /* Muda a cor de fundo do botão ao passar o mouse sobre ele */
 }

@@ -1,0 +1,41 @@
+body {
+  background-color: #dcdbd9;
+  /* Cor de fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.link {
+  color: #dcdbd9;
+  /* Define a cor do link como azul */
+}
+
+.link:hover {
+  color: #1c1d20;
+  /* Define a cor do link quando passar o mouse sobre ele como vermelho */
+}
+
+
+.container {
+  background-color: #5b5e89;
+  /* Cor da caixa */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  border: 1px solid #1c1d20;
+}
+
+.container p {
+  color: #dcdbd9;
+  /* Cor do texto */
+}
+
+.container h1 {
+  color: #dcdbd9;
+  /* Cor do texto */
+}
