@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
         triangulo: document.getElementById('triangulo'),
         circulo: document.getElementById('circulo'),
         circunferencia: document.getElementById('circunferencia'),
-        pitagoras: document.getElementById('pitagoras')
+        pitagoras: document.getElementById('pitagoras'),
+        imagem: document.getElementById('imagem')
     };
 
     // Função para limpar todos os campos de entrada
