@@ -1,25 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórmulas</title>
+    <title>Calculadora de Formas Geométricas</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
-
 <body>
     <div class="container">
-        <h1>Fórmulas Matemáticas</h1>
-        <p>Quadrado = l² | retângulo = b.h | trapézio = (a+b)h/2 | losango = D.d2 | triângulo = b.h/2 ou l²√3/4 |
-            círculo = πr² | circuferência = 2πr |
-            pitagoras = a²= b² + c² | sen 30/cos 60 = 1/2 | sen/cos 45 = √2/2
-            | sen 60/cos 30 = √3/2 | tan 30 = √3/3 | tan 45 = 1 | tan 60 = √3</p>
+        <h1>Calculadora de Formas geométricas</h1>
+        <div class="oqcalculo">
+            <p>O que você quer calcular hoje? <br><br>
+                <select id="lista">
+                    <option value="oi">Clique Aqui</option>
+                    <option value="quadrado">Quadrado</option>
+                    <option value="retangulo">Retângulo</option>
+                    <option value="trapezio">Trapézio</option>
+                    <option value="losango">Losângo</option>
+                    <option value="triangulo">Triângulo</option>
+                    <option value="circulo">Círculo</option>
+                    <option value="circunferencia">Circunferência</option>
+                    <option value="pitagoras">Pitágoras</option>
+                </select>
+                <input type="button" value="Começar" onclick="exibirCalc()">
+            </p>
+            <div id="quadrado" hidden>
+                Insira o valor do lado: <input type="number" id="ladoQuad"><button onclick="calcQuad()">Calcular</button>
+            </div>
 
+            <div id="retangulo" hidden>
+                Insira o valor da base: <input type="number" id="ladoRet1">
+                Insira o valor da altura: <input type="number" id="ladoRet2">
+                <button onclick="calcRet()">Calcular</button>
+            </div>
 
+            <div id="trapezio" hidden>
+                Insira o valor da base maior: <input type="number" id="baseMaior">
+                Insira o valor da base menor: <input type="number" id="baseMenor">
+                Insira o valor da altura: <input type="number" id="alturaTrap">
+                <button onclick="calcTrap()">Calcular</button>
+            </div>
+
+            <div id="losango" hidden>
+                Insira o valor da diagonal maior: <input type="number" id="diagMaior">
+                Insira o valor da diagonal menor: <input type="number" id="diagMenor">
+                <button onclick="calcLos()">Calcular</button>
+            </div>
+
+            <div id="triangulo" hidden>
+                Insira o valor da base: <input type="number" id="baseTri">
+                Insira o valor da altura: <input type="number" id="alturaTri">
+                <button onclick="calcTri()">Calcular</button>
+            </div>
+
+            <div id="circulo" hidden>
+                Insira o valor do raio: <input type="number" id="raioCir">
+                <button onclick="calcCirculo()">Calcular</button>
+            </div>
+
+            <div id="circunferencia" hidden>
+                Insira o valor do raio: <input type="number" id="raioCircun">
+                <button onclick="calcCircun()">Calcular</button>
+            </div>
+
+            <div id="pitagoras" hidden>
+                Insira o valor do cateto A: <input type="number" id="catetoA">
+                Insira o valor do cateto B: <input type="number" id="catetoB">
+                <button onclick="calcPit()">Calcular</button>
+            </div>
+
+            <div id="res"></div>
+        </div>
         <p><a href="../index.html" class="link">Calculadora</a></p>
     </div>
 </body>
-
 </html>
